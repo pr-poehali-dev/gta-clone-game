@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// GTA San Andreas themed colors
+				'gta-orange': '#FF6B00',
+				'gta-yellow': '#FFD700',
+				'gta-black': '#000000',
+				'gta-dark': '#1A1A1A',
+				'gta-brown': '#8B4513'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +90,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gta-pulse': {
+					'0%, 100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					},
+					'50%': {
+						transform: 'scale(1.05)',
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gta-pulse': 'gta-pulse 2s ease-in-out infinite'
+			},
+			fontFamily: {
+				'gta': ['Impact', 'Arial Black', 'sans-serif']
 			}
 		}
 	},
