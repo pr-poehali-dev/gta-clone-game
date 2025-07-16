@@ -18,13 +18,13 @@ const Index = () => {
             </div>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <Button variant="ghost" className="text-black hover:bg-black/10">
+            <Button variant="ghost" className="text-black hover:bg-black/10" onClick={() => alert('🏠 Главная страница')}>
               Главная
             </Button>
-            <Button variant="ghost" className="text-black hover:bg-black/10">
+            <Button variant="ghost" className="text-black hover:bg-black/10" onClick={() => alert('🎮 Переход в игру!')}>
               Игра
             </Button>
-            <Button variant="ghost" className="text-black hover:bg-black/10">
+            <Button variant="ghost" className="text-black hover:bg-black/10" onClick={() => alert('⚙️ Настройки игры')}>
               Настройки
             </Button>
           </nav>
@@ -78,6 +78,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-black text-orange-500 hover:bg-gray-900 border-2 border-orange-500 px-12 py-6 text-xl font-bold"
+              onClick={() => alert('🎮 Игра загружается! Скоро добавим 3D движок для полноценной игры.')}
             >
               <Icon name="Play" className="mr-2" size={24} />
               НАЧАТЬ ИГРУ
@@ -87,6 +88,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg"
                 className="border-black text-black hover:bg-black hover:text-orange-500 px-8 py-4 font-bold"
+                onClick={() => alert('🌐 Мультиплеер будет доступен в следующем обновлении!')}
               >
                 <Icon name="Users" className="mr-2" size={20} />
                 Мультиплеер
@@ -95,6 +97,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg"
                 className="border-black text-black hover:bg-black hover:text-orange-500 px-8 py-4 font-bold"
+                onClick={() => alert('⚙️ Настройки: Графика, Звук, Управление - скоро!')}
               >
                 <Icon name="Settings" className="mr-2" size={20} />
                 Настройки
